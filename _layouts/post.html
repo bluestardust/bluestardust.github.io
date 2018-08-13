@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div>
+  <a href="{{ site.baseurl }}/index.html">
+    <span> << Back To Posts </span>
+  </a>
+</div>
+{% if page.next.url %}
+<div>
+  <a href="{{page.next.url | prepend: site.baseurl }}">
+    <span>▲ Previous Post : {{page.next.title}}</span>
+  </a>   
+</div>
+{% endif %}
+<div>　　　　</div>
+<span><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %B %-d | Week %W & Day %j of Year %Y" }}</time></span>
+<div style="font-weight:bold;color:#8a4405;">{{ page.title }}</div>
+<div>　　　　</div>
+{{ content }}
+<div>　　　　</div>  
+{% if page.previous.url %}
+<div>
+  <a href="{{page.previous.url | prepend: site.baseurl }}">
+    <span>▼ Next Post : {{page.previous.title}}</span>
+  </a>   
+</div>
+{% endif %}

@@ -1,0 +1,46 @@
+---
+title: ZHao's Notebook
+layout: default
+permalink: 
+---
+<div>Ξ ZHao's Notebook ( {{ paginator.total_posts }} posts )</div>
+<div>　　　　</div>
+{% for post in paginator.posts %}
+  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+  {% if year != y %}
+    {% assign year = y %}
+    <div><li class="listing-seperator">{{ y }}</li></div>
+  {% endif %}
+  <div>
+  <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} - {{ post.date | date: "%A" }}</a>
+  </li>
+  </div>
+{% endfor %}
+<div>　　　　</div>
+
+<div id="post-pagination" class="paginator">
+
+      
+ {% if paginator.total_pages > 1 %}
+        <div class="pagination">
+
+    {% if paginator.page == 1 %}
+      <span class="current-page">1</span>
+      {% else %}
+      <a href="/">1</a>
+    {% endif %}
+
+    {% for count in (2..paginator.total_pages) %}
+      {% if count == paginator.page %}
+      <span class="current-page">{{count}}</span>
+      {% else %}
+      <a href="/pages/page-{{count}}/index.html">{{count}}</a>
+      {% endif %}
+    {% endfor %}
+
+  {% endif %}
+
+</div>
+
