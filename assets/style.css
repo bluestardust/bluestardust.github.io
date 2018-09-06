@@ -1,27 +1,102 @@
+@font-face {
+  font-family: 'Century Gothic';
+  src:url("/assets/fonts/GOTHIC.TTF") format('truetype');
+}
+
+@font-face {
+  font-family: 'Galdeano';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Galdeano Regular'), local('Galdeano-Regular'), url("/assets/fonts/Galdeano.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Electrolize';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Electrolize'), local('Electrolize-Regular'), url("/assets/fonts/Electrolize.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum'), local('Cuprum-Regular'), url("/assets/fonts/Cuprum.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Codystar';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Codystar'), url("/assets/fonts/Codystar.woff") format('woff');
+}
+
 body {
-	padding:0;
-	margin:0;
-	background:#E4E8EF;	
-	font-size:14px; 
-	font-family:Consolas,Verdana,"Microsoft Yahei","Hiragino Sans GB","Noto Sans S Chinese Thin",sans-serif;
+  padding:0;
+  margin:0;
+  background:#ffffff;  
+  font-size:14px; 
+  font-family:Cuprum,Consolas,Verdana,"Microsoft Yahei","Hiragino Sans GB","Noto Sans S Chinese Thin",sans-serif;
 }
 a {
   color: #0a9d9d;
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.4s ease-in-out;
 }
 a:hover {
   color:#A0DAD0;
+  transition: color 0.4s ease-in-out;
 }
 
-/**
- * Text Selection
- */
 ::selection {
   color: #fff;
   background-color: #68c9da;
   text-shadow: none;
+}
+
+.post-content {
+
+  font-family: 'Electrolize', Consolas, 'Microsoft Yahei', monospace, sans-serif;
+
+}
+
+.post-content img {
+  width: 100%;
+  max-width: 60rem;
+  height: inherit;
+  display:block;
+  margin:4px 4px 4px 4px;
+  -webkit-box-shadow:#999 1px 1px 4px;
+  -moz-box-shadow:#999 1px 1px 4px;
+  box-shadow:#999 1px 1px 4px;
+}
+
+blockquote, q {
+    font-style: italic;
+    border-left: 5px solid #008090;
+    margin: 30px 0;
+    padding: 10px 20px 10px 30px;
+    background-color: rgba(78, 183, 212, 0.33);
+}
+
+code, kbd, pre, samp {
+  font-family: 'DejaVu Sans Mono', Consolas, 'Microsoft Yahei', monospace, sans-serif;
+  font-size: 0.875em;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+ pre {
+  color: #eee;
+  background: #000;/*#006d8c;*/
+  width:100%;
+  padding:24px 24px;
+  max-width: 60rem;
+  /* margin-left: auto; */
+  margin-right: auto;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .highlight .gh {
@@ -209,23 +284,3 @@ a:hover {
 .highlight .o {
   color: #f92672;
 }
-code, kbd, pre, samp {
-    font-family: DSM, Consolas, 'Microsoft Yahei', monospace, sans-serif;
-    font-size: 0.875em;
-    white-space: pre-wrap;
-    word-break: break-all;
-    word-wrap: break-word;
-}
-
- pre {
-  color: #eee;
-  background: #000;/*#006d8c;*/
-  width:100%;
-  padding:24px 24px;
-  max-width: 60rem;
- /* margin-left: auto; */
-  margin-right: auto;
-  word-break: break-all;
-  word-wrap: break-word;
-}
-

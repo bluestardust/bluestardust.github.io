@@ -1,0 +1,92 @@
+/*howardzhao*/
+/* Go to top bottom css */
+#updown{
+    position: fixed !important;
+    bottom:27px;
+    right:7.5%;
+    display:none;
+    z-index:999; 	
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#upup{
+    background: url("/wp-content/uploads/zhaohao/UpDown/bg_top.png") no-repeat scroll 13px center rgba(214, 214, 214, 0.5);
+    border-radius: 32px 32px 32px 32px;
+    display: block;
+    font-size: 0;
+    height: 32px;
+    line-height: 0;
+    overflow: hidden;
+    width: 32px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#downdown{
+    background: url("/wp-content/uploads/zhaohao/UpDown/bg_bottom.png") no-repeat scroll 13px center rgba(214, 214, 214, 0.5);
+    border-radius: 32px 32px 32px 32px;
+    display: block;
+    font-size: 0;
+    height: 32px;
+    line-height: 0;
+    overflow: hidden;
+    width: 32px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#upup:hover{background-color: rgba(42, 184, 189 ,0.9);}
+#downdown:hover{background-color: rgba(42, 184, 189 ,0.9);} 
+
+.wechat {
+	position:relative;
+}
+
+.wechat img{
+	display:none;
+}
+.wechat:hover img{
+	display:block;
+	position:absolute;
+	width:256px;
+	/*height:256px;*/
+}
+
+
+@font-face {
+    font-family: 'Century Gothic';
+    src:url(/wp-content/uploads/zhaohao/WebFonts/GOTHIC.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'DejaVu Sans Mono';
+    src:url(/wp-content/uploads/zhaohao/WebFonts/DejaVuSansMono.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Galdeano';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Galdeano Regular'), local('Galdeano-Regular'), url("/wp-content/uploads/zhaohao/WebFonts/webfont/Galdeano.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Electrolize';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Electrolize'), local('Electrolize-Regular'), url("/wp-content/uploads/zhaohao/WebFonts/webfont/Electrolize.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum'), local('Cuprum-Regular'), url("/wp-content/uploads/zhaohao/WebFonts/webfont/Cuprum.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Codystar';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Codystar'), url("/wp-content/uploads/zhaohao/WebFonts/webfont/Codystar.woff") format('woff');
+}

@@ -3,7 +3,7 @@ title: ZHao's Notebook
 layout: default
 permalink: 
 ---
-<div>Ξ ZHao's Notebook ( {{ paginator.total_posts }} posts )</div>
+<div>Ξ ZHao's Notebook ( {{ paginator.total_posts }} posts )  <a href="{{ site.baseurl }}/timeline.html"><span> Timeline </span></a></div>
 <div>　　　　</div>
 {% for post in paginator.posts %}
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}

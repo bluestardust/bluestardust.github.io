@@ -3,7 +3,7 @@ timezone: Asia/Shanghai
 # Site settings
 email: zhao@zhao.stream
 baseurl: ""
-paginate: 20
+paginate: 50
 paginate_path: "/pages/page-:num/"
 
 
@@ -25,7 +25,7 @@ include: ["_categories"]
 exclude: ["Gemfile.lock", "README.md", "LICENSE.txt"]
 markdown: kramdown
 highlighter: rouge
-permalink: note-:title.html
+permalink: /:year-:month-:day-:title.html
 
 # Sass
 sass:

@@ -9,8 +9,10 @@
   <!-- Apple Touch Icons -->
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <meta name="author" content="zhao.stream" />
-  <link rel="stylesheet" href="/assets/style.css"> 
-  <title>{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }} | {{ site.description }}{% endif %}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/timeline.css">
+  {% capture mytitle%}{{page.title}}{%endcapture%}
+  <title>{% if mytitle %}{{ mytitle | escape }} | {{ site.title }}{% else %}{{ site.title | escape }} | {{ site.description }}{% endif %}</title>
 	<style type="text/css">
 
 	</style>
